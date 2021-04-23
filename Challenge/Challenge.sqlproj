@@ -65,6 +65,7 @@
     <Compile Include="Core\BigBitBlob.cs" />
     <Compile Include="Core\BlobIO.cs" />
     <Compile Include="Core\VersionIO.cs" />
+    <Compile Include="Core\PermissionSet.cs" />
     <Compile Include="Interfaces\IOBinary.cs" />
     <Compile Include="Interfaces\IOString.cs" />
     <Compile Include="Extensions\CollectionEx.cs" />
