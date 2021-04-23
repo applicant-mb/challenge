@@ -19,7 +19,10 @@
 3) Provide a brief comment for each of the following:
 
    - Concept or element that was unfamiliar or unexpected
+     * I don't often get opportunities to work with byte arrays/encoding in my current role, and despite working constantly with SQL Server, I've never worked with SSDT (which proved difficult for my personal Mac to deal with 😃). Combining those two made parsing the project and what it was doing a unique experience for me. What was unexpected (but definitely a pleasant surprise) was seeing C# 8 being used. My current role requires keeping with version 5, so I'm always happy when I get to use see code using the newer language features I don't get to use yet.
 
    - Constructive review or recommended improvement
+     * It would be nice to see a bit more explanation on the PermissionSet piece. What was being described sounded more like an enum than a class (I am curious if that was the point), and I implemented as such. And given the ease of converting those to byte values, I bypassed the BigBitBlob even though it had listed as one of its use cases sending permissions, and instead just created a method returning IEnumerable\<byte> which could have ToArray() called on it and get wrapped by a BigBitBlob.
 
    - Opportunity or future enhancement
+     * As stated, my day-to-day doesn't usually involve fine tuning bitwise operations, so I'd need to do some research to provide any optimization insight on that front. The one bit I would offer as an opportunity is that I generally prefer simple, but not abbreviated variable names, particulary with member variables. So I'd see renaming some fields as an opportunity, at least as far as in use interfaces allow.
